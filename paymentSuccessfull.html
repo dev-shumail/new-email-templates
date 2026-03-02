@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Booking Confirmed – Otoz.AI</title>
+    <style>
+      /* ===== RESET ===== */
+      body,
+      table,
+      td,
+      p,
+      a,
+      li,
+      blockquote {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      img {
+        border: 0;
+        display: block;
+      }
+
+      /* ===== BASE ===== */
+      body {
+        background-color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        color: #111111;
+      }
+
+      /* ===== WRAPPER ===== */
+      .email-wrapper {
+        width: 100%;
+        background-color: white;
+        padding: 30px 0;
+      }
+
+      /* ===== MAIN CONTAINER ===== */
+      .email-container {
+        width: 580px;
+        margin: 0 auto;
+        background-color: #fcfcfc;
+        overflow: hidden;
+      }
+
+      /* ===== HEADER ===== */
+      .header {
+        padding: 24px 30px 16px 30px;
+      }
+      .header-booking-label {
+        font-size: 16px;
+        color: #111111;
+      }
+      .header-confirmed {
+        font-size: 32px;
+        font-weight: 700;
+        color: #28a745;
+        margin-bottom: 0;
+      }
+      .header-tagline {
+        font-size: 16px;
+        color: #111111;
+        font-weight: 700;
+        margin-top: 8px;
+      }
+
+      /* ===== META ROW (Date / Booking #) ===== */
+      .meta-row {
+        padding: 0;
+      }
+      .meta-cell-label {
+        font-size: 12px;
+        color: #111111;
+        font-weight: 600;
+        text-align: right;
+        padding-right: 4px;
+      }
+      .meta-cell-value {
+        font-size: 12px;
+        color: #111111;
+        font-weight: 300;
+        text-align: right;
+      }
+
+      /* ===== GREETING ===== */
+      .greeting-section {
+        padding: 20px 30px;
+      }
+      .greeting-name {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #111111;
+      }
+      .greeting-body {
+        font-size: 12px;
+        color: #111111;
+        line-height: 1.4;
+      }
+
+      .download_receipt {
+        background-color: #144d78;
+        padding: 10px 40px;
+        color: #ffffff;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      /* ===== FOOTER MESSAGE ===== */
+      .footer-message {
+        padding: 30px 30px 10px 30px;
+        font-size: 13px;
+        font-weight: 300;
+        color: #111111;
+        text-align: center;
+      }
+
+      /* ===== ICON CARDS (Thank You / Support / Help) ===== */
+      .cards-section {
+        padding: 10px 20px 20px 20px;
+      }
+      .card-box {
+        background-color: #ffffff;
+        padding: 14px 8px;
+        text-align: center;
+        padding: 0px 10px;
+        height: 115.625px;
+      }
+      .inner-card-content {
+        padding: 10px;
+      }
+      .card-icon {
+        margin: 0 auto;
+        width: 36px;
+        padding: 14px 0px;
+      }
+      .card-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #111111;
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 11px;
+        color: #000000;
+        line-height: 1.5;
+      }
+
+      /* ===== BOTTOM BAR ===== */
+      .bottom-bar {
+        background-color: #1b3a5c;
+        padding: 14px 30px;
+        text-align: center;
+      }
+      .bottom-bar-text {
+        font-size: 12px;
+        color: #aac5e0;
+      }
+      .bottom-bar-text span {
+        color: #ffffff;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== EMAIL WRAPPER ===== -->
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <!-- ===== MAIN CONTAINER ===== -->
+          <table
+            class="email-container"
+            align="center"
+            cellpadding="0"
+            cellspacing="0"
+          >
+            <!-- ============================= -->
+            <!-- HEADER: Logo + Booking Status -->
+            <!-- ============================= -->
+            <tr>
+              <td class="header">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <!-- ROW 1 -->
+                  <tr>
+                    <!-- Left: Booking / Confirmed -->
+                    <td width="60%" valign="top">
+                      <p class="header-booking-label">Payment</p>
+                      <p class="header-confirmed">Successful</p>
+                    </td>
+
+                    <!-- Right: Logo -->
+                    <td width="40%" valign="top" align="right">
+                      <img
+                        src="https://agent.otoz.ai/build/assets/otozNewLogo-Bun2ec8w.png"
+                        alt="Otoz.AI Logo"
+                        width="170"
+                        style="display: block"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <!-- Left: Tagline -->
+                    <td width="100%">
+                      <p class="header-tagline">
+                        The First Cross Border Marketplace For Automobiles
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0 30px">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td
+                      height="1"
+                      style="
+                        background-color: #000000;
+                        font-size: 0;
+                        line-height: 0;
+                      "
+                    >
+                      &nbsp;
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ==================== -->
+            <!-- GREETING SECTION     -->
+            <!-- ==================== -->
+            <tr>
+              <td class="greeting-section">
+                <p class="greeting-name">Dear Adil,</p>
+                <p class="greeting-body">
+                  Thank You for your payment. Here are the details:
+                </p>
+              </td>
+            </tr>
+
+            <!-- ==================== -->
+            <!-- Download SECTION     -->
+            <!-- ==================== -->
+
+            <tr>
+              <td align="center" style="padding: 20px 0">
+                <a href="#" class="download_receipt"
+                  >Download Payment Receipt</a
+                >
+              </td>
+            </tr>
+
+            <!-- ========================== -->
+            <!-- FOOTER MESSAGE             -->
+            <!-- ========================== -->
+            <tr>
+              <td class="footer-message">
+                If you have any further queries, feel free to reach out. We look
+                forward to your response.
+              </td>
+            </tr>
+
+            <!-- ==================================== -->
+            <!-- CARDS: Thank You / Support / Help    -->
+            <!-- ==================================== -->
+            <tr>
+              <td class="cards-section">
+                <!-- gap column approach for spacing between cards -->
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <!-- Card 1: Thank You -->
+                    <td width="32%" valign="top">
+                      <table
+                        class="card-box"
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tr>
+                          <td
+                            class="inner-card-content"
+                            height="115"
+                            valign="top"
+                          >
+                            <div class="card-icon">
+                              <img
+                                src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444743_f46366ae6717b32d_thanks.png"
+                                alt="thanks"
+                                width="24"
+                                height="28"
+                              />
+                            </div>
+                            <p class="card-title">Thank You!</p>
+                            <p class="card-text">
+                              We Appreciate<br />your business
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+
+                    <!-- GAP between card 1 and 2 -->
+                    <td width="2%">&nbsp;</td>
+
+                    <!-- Card 2: Support Time -->
+                    <td width="32%" valign="top">
+                      <table
+                        class="card-box"
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tr>
+                          <td
+                            class="inner-card-content"
+                            height="115"
+                            valign="top"
+                          >
+                            <div class="card-icon">
+                              <img
+                                src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444721_a7b401d9643f4625_time.png"
+                                alt="time"
+                                width="24"
+                                height="24"
+                              />
+                            </div>
+                            <p class="card-title">Support Time</p>
+                            <p class="card-text">
+                              9:00 AM – 6:00 PM<br />www.otoz.ai
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+
+                    <!-- GAP between card 2 and 3 -->
+                    <td width="2%">&nbsp;</td>
+
+                    <!-- Card 3: Need Help -->
+                    <td width="32%" valign="top">
+                      <table
+                        class="card-box"
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tr>
+                          <td
+                            class="inner-card-content"
+                            height="115"
+                            valign="top"
+                          >
+                            <div class="card-icon">
+                              <img
+                                src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444819_486e9bfac3ee834d_email.png"
+                                alt="help"
+                                width="31"
+                                height="24"
+                              />
+                            </div>
+                            <p class="card-title">Need Help?</p>
+                            <p class="card-text">
+                              info@otoz.ai<br />+813-6435-2269
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ========================== -->
+            <!-- BOTTOM BAR                 -->
+            <!-- ========================== -->
+            <tr>
+              <td class="bottom-bar">
+                <p class="bottom-bar-text">
+                  2026 <span>Otoz.Ai</span> All rights reserved
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- end .email-container -->
+        </td>
+      </tr>
+    </table>
+    <!-- end .email-wrapper -->
+  </body>
+</html>
