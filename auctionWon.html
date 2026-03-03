@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Booking Confirmed – Otoz.AI</title>
+    <title>Auction Won – Otoz.AI</title>
     <style>
       /* ===== RESET ===== */
       body,
@@ -63,6 +63,7 @@
       .header-booking-label {
         font-size: 16px;
         color: #111111;
+        margin-bottom: 2px;
       }
       .header-confirmed {
         font-size: 32px;
@@ -111,14 +112,66 @@
         line-height: 1.4;
       }
 
-      .download_receipt {
+      /* ===== SECTION HEADER (dark blue bar) ===== */
+      .section-header-inner {
         background-color: #144d78;
-        padding: 10px 40px;
         color: #ffffff;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 13px;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px;
+      }
+      /* ===== VEHICLE DETAILS ===== */
+      .vehicle-section {
+        padding: 16px 30px;
+      }
+      .vehicle-name {
+        font-size: 14px;
         font-weight: 500;
+        color: rgba(17, 17, 17, 1);
+      }
+      .vehicle-specs {
+        font-size: 10px;
+        color: rgba(85, 85, 85, 1);
+        margin-top: 5px;
+      }
+      .vehicle-id {
+        font-size: 10px;
+        color: #333333;
+        font-weight: 400;
+        margin-top: 18px;
+      }
+      .vehicle-old-price {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        text-align: right;
+      }
+      .vehicle-new-price {
+        color: #28a745;
+        font-size: 10px;
+        text-align: right;
+      }
+
+      /* ===== TOTAL AMOUNT ===== */
+      .total-row {
+        background-color: #eaf6ff;
+        padding: 14px 30px;
+        border-bottom: 1px solid #eaf6ff;
+      }
+      .total-label {
+        font-size: 14px;
+        padding: 5px;
+        font-weight: 700;
+        color: #111111;
+        text-align: right;
+        width: 80%;
+      }
+      .total-value {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 5px;
+        color: #2ba6ff;
+        text-align: right;
       }
 
       /* ===== FOOTER MESSAGE ===== */
@@ -199,8 +252,8 @@
                   <tr>
                     <!-- Left: Booking / Confirmed -->
                     <td width="60%" valign="top">
-                      <p class="header-booking-label">Payment</p>
-                      <p class="header-confirmed">Successful</p>
+                      <p class="header-booking-label">Auction</p>
+                      <p class="header-confirmed">Won</p>
                     </td>
 
                     <!-- Right: Logo -->
@@ -214,6 +267,7 @@
                     </td>
                   </tr>
                 </table>
+
                 <table>
                   <tr>
                     <!-- Left: Tagline -->
@@ -252,20 +306,77 @@
               <td class="greeting-section">
                 <p class="greeting-name">Dear Adil,</p>
                 <p class="greeting-body">
-                  Thank You for your payment. Here are the details:
+                  You have won the auction for:
+                  <strong>Porsche Cayman Gt4</strong>
                 </p>
               </td>
             </tr>
 
-            <!-- ==================== -->
-            <!-- Download SECTION     -->
-            <!-- ==================== -->
-
+            <!-- ========================= -->
+            <!-- SECTION HEADER: Vehicle   -->
+            <!-- ========================= -->
             <tr>
-              <td align="center" style="padding: 20px 0">
-                <a href="#" class="download_receipt"
-                  >Download Payment Receipt</a
+              <td style="padding: 0 30px">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="section-header-inner">Vehicle Details</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ========================= -->
+            <!-- VEHICLE DETAILS ROW       -->
+            <!-- ========================= -->
+            <tr>
+              <td class="vehicle-section">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <!-- Car Image placeholder — replace src with actual car photo -->
+                    <td width="100" valign="top">
+                      <img
+                        src="./assets/dummy.png"
+                        alt="otoz.ai car"
+                        width="137"
+                        height="91"
+                      />
+                    </td>
+
+                    <!-- Car Info -->
+                    <td style="padding-left: 14px; vertical-align: middle">
+                      <p class="vehicle-name">Porsche Cayman GT4</p>
+                      <p class="vehicle-specs">
+                        2020/5 | Hybrid | 27,478km | 1,500cc | AT
+                      </p>
+                      <p class="vehicle-id">Otoz- 123</p>
+                    </td>
+
+                    <!-- Price -->
+                    <td width="110" style="vertical-align: middle">
+                      <p class="vehicle-old-price">$88,000</p>
+                      <p class="vehicle-new-price">Winning Bid Amount</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ========================= -->
+            <!-- TOTAL AMOUNT ROW          -->
+            <!-- ========================= -->
+            <tr>
+              <td style="padding: 0 30px">
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="total-row"
                 >
+                  <tr>
+                    <td class="total-label">Total Amount</td>
+                    <td class="total-value">$88,000</td>
+                  </tr>
+                </table>
               </td>
             </tr>
 
