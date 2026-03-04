@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Booking Confirmed – Otoz.AI</title>
+    <title>Shipping Failed – Otoz.AI</title>
     <style>
       /* ===== RESET ===== */
       body,
@@ -68,7 +68,7 @@
       .header-confirmed {
         font-size: 32px;
         font-weight: 700;
-        color: #28a745;
+        color: #dc3545;
         margin-bottom: 0;
       }
       .header-tagline {
@@ -204,6 +204,25 @@
         vertical-align: middle;
       }
 
+      .failure-row {
+        background-color: #fbebec;
+        /* remove padding from here */
+      }
+      .failure-label {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 5px 10px;
+        color: #dc3545;
+        text-align: left;
+        width: 100%;
+      }
+
+      .failure-reason{
+        color: #000000;
+        font-weight: 300;
+        font-size: 12px;
+      }
+
       /* ===== FOOTER MESSAGE ===== */
       .footer-message {
         padding: 30px 30px 10px 30px;
@@ -282,8 +301,8 @@
                   <tr>
                     <!-- Left: Booking / Confirmed -->
                     <td width="60%" valign="top">
-                      <p class="header-booking-label">Booking</p>
-                      <p class="header-confirmed">Confirmed</p>
+                      <p class="header-booking-label">Shipping</p>
+                      <p class="header-confirmed">Failed</p>
                     </td>
 
                     <!-- Right: Logo -->
@@ -354,9 +373,9 @@
               <td class="greeting-section">
                 <p class="greeting-name">Dear Adil,</p>
                 <p class="greeting-body">
-                  Great News! Your shipment booking has confirmed successfully.
-                  The shipping process for your car has been arranged. Below are
-                  the details of your booking and shipment for your reference.
+                  We regret to inform you that the shipping process for your car
+                  has failed. Below are the details related to the Booking and
+                  Shipping request:
                 </p>
               </td>
             </tr>
@@ -501,6 +520,37 @@
                       <span class="shipping-label">Shipping Method</span>
                     </td>
                     <td class="shipping-value">Sea Freight, RoRo</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ========================= -->
+            <!--     Failure Reason        -->
+            <!-- ========================= -->
+            <tr>
+              <td style="padding: 16px 30px 10px 30px">
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  class="failure-row"
+                >
+                  <tr>
+                    <td class="failure-label">Failure Reason</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 0px 30px">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="failure-reason">
+                      Carrier unavailable due to incomplete documentation and
+                      payment verification issues.
+                    </td>
                   </tr>
                 </table>
               </td>
