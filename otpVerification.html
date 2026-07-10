@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Email Verification - Otoz.AI</title>
+    <style>
+      body,
+      table,
+      td,
+      p,
+      a,
+      li,
+      blockquote {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      img {
+        border: 0;
+        display: block;
+      }
+
+      body {
+        background-color: #e7e7e7;
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 14px;
+        color: #1f1f1f;
+      }
+
+      .email-wrapper {
+        width: 100%;
+        background-color: #e7e7e7;
+        padding: 0;
+      }
+
+      .email-container {
+        width: 680px;
+        margin: 0 auto;
+        background-color: #ffffff;
+      }
+
+      /* ===== HEADER ===== */
+      .header-section {
+        padding: 28px 40px 20px;
+        text-align: center;
+      }
+
+      .header-logo {
+        margin: 0 auto 18px;
+      }
+
+      .header-divider-top {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        margin: 0 0 20px;
+      }
+
+      .security-label {
+        font-size: 11px;
+        font-weight: 500;
+        color: #0b151f;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+
+      .main-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #1a4a7a;
+        margin-bottom: 4px;
+      }
+
+      .subtitle {
+        font-size: 12px;
+        color: #0b151f;
+        font-weight: 400;
+      }
+
+      .header-divider-bottom {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        margin: 20px 0 0;
+      }
+
+      /* ===== WELCOME SECTION ===== */
+      .welcome-section {
+        padding: 1px 50px 28px;
+        text-align: center;
+      }
+
+      .welcome-text {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        line-height: 1.5;
+      }
+
+      /* ===== OTP SECTION ===== */
+      .otp-section {
+        padding: 0 50px 30px;
+      }
+
+      .otp-box {
+        background-color: #f4f8ff;
+        border: 1px solid #d0e3f5;
+        border-radius: 10px;
+        padding: 22px 20px 18px;
+        text-align: center;
+      }
+
+      .otp-label {
+        font-size: 10px;
+        font-weight: 600;
+        color: #888888;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      .otp-digits-table {
+        margin: 0 auto;
+      }
+
+      .otp-digit-cell {
+        padding: 0 5px;
+        text-align: center;
+      }
+
+      .otp-digit {
+        width: 46px;
+        height: 54px;
+        background-color: #ffffff;
+        border: 1.5px solid #c8ddf0;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a4a7a;
+        text-align: center;
+        line-height: 54px;
+        display: inline-block;
+      }
+
+      .otp-underline {
+        width: 46px;
+        height: 3px;
+        background-color: #2898ef;
+        border-radius: 2px;
+        margin: 6px auto 0;
+      }
+
+      /* ===== WARNING SECTION ===== */
+      .warning-section {
+        padding: 0 50px 30px;
+      }
+
+      .warning-box {
+        background-color: #fff5f5;
+        border: 1px solid #f5c6c6;
+        border-radius: 8px;
+        padding: 12px 18px;
+        text-align: center;
+      }
+
+      .warning-title {
+        font-size: 12px;
+        font-weight: 700;
+        color: #cc0000;
+        margin-bottom: 5px;
+      }
+
+      .warning-text {
+        font-size: 12px;
+        color: #444444;
+        line-height: 1.5;
+      }
+
+      /* ===== ICON CARDS (Thank You / Support / Help) ===== */
+      .cards-section {
+        padding: 10px 20px 20px 20px;
+      }
+      .card-box {
+        background-color: #ffffff;
+        padding: 14px 8px;
+        text-align: center;
+        padding: 0px 10px;
+        height: 115.625px;
+      }
+      .inner-card-content {
+        padding: 10px;
+      }
+      .card-icon {
+        margin: 0 auto;
+        width: 36px;
+        padding: 14px 0px;
+      }
+      .card-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #111111;
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 11px;
+        color: #000000;
+        line-height: 1.5;
+      }
+
+      /* ===== BOTTOM BAR ===== */
+      .bottom-bar {
+        background-color: #1b3a5c;
+        padding: 14px 30px;
+        text-align: center;
+      }
+
+      .bottom-bar-text {
+        font-size: 12px;
+        color: #aac5e0;
+      }
+
+      .bottom-bar-text strong {
+        color: #ffffff;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td>
+            <table
+              class="email-container"
+              align="center"
+              cellpadding="0"
+              cellspacing="0"
+            >
+              <!-- HEADER -->
+              <tr >
+                <td class="header-section">
+                  <div class="header-logo">
+                    <img
+                      src="https://agent.otoz.ai/build/assets/otozNewLogo-Bun2ec8w.png"
+                      alt="Otoz.AI Logo"
+                      width="200"
+                      style="margin: 0 auto"
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <tr >
+                <td class="otp-section">
+                  <div class="otp-box">
+                    <p class="security-label">Security Verification</p>
+                    <p class="main-title">Email Verification</p>
+                    <p class="subtitle">One-time code inside ↓</p>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- WELCOME TEXT -->
+              <tr >
+                <td class="welcome-section">
+                  <p class="welcome-text">
+                    Welcome to Otoz.ai the premier cross-border<br />
+                    marketplace for automobiles.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- OTP BOX -->
+              <tr >
+                <td class="otp-section">
+                  <div class="otp-box">
+                    <p class="otp-label">Your Verification Code</p>
+                    <table
+                      class="otp-digits-table"
+                      cellpadding="0"
+                      cellspacing="0"
+                    >
+                      <tr>
+                        <td class="otp-digit-cell">
+                          <div class="otp-digit">8</div>
+                          <div class="otp-underline"></div>
+                        </td>
+                        <td class="otp-digit-cell">
+                          <div class="otp-digit">7</div>
+                          <div class="otp-underline"></div>
+                        </td>
+                        <td class="otp-digit-cell">
+                          <div class="otp-digit">9</div>
+                          <div class="otp-underline"></div>
+                        </td>
+                        <td class="otp-digit-cell">
+                          <div class="otp-digit">3</div>
+                          <div class="otp-underline"></div>
+                        </td>
+                        <td class="otp-digit-cell">
+                          <div class="otp-digit">3</div>
+                          <div class="otp-underline"></div>
+                        </td>
+                        <td class="otp-digit-cell">
+                          <div class="otp-digit">0</div>
+                          <div class="otp-underline"></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- WARNING BOX -->
+              <tr >
+                <td class="warning-section">
+                  <div class="warning-box">
+                    <p class="warning-title">Never share this code.</p>
+                    <p class="warning-text">
+                      Otoz.ai will never ask for your OTP. If you didn't request
+                      this, please ignore.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- CARDS SECTION -->
+              <tr >
+                <td class="cards-section">
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <!-- Card 1: Thank You -->
+                      <td width="32%" valign="top">
+                        <table
+                          class="card-box"
+                          width="100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                        >
+                          <tr style="background-color: #f1f1f1">
+                            <td
+                              class="inner-card-content"
+                              height="115"
+                              valign="top"
+                            >
+                              <div class="card-icon">
+                                <img
+                                  src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444743_f46366ae6717b32d_thanks.png"
+                                  alt="thanks"
+                                  width="24"
+                                  height="28"
+                                />
+                              </div>
+                              <p class="card-title">Thank You!</p>
+                              <p class="card-text">
+                                We Appreciate<br />your business
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td width="2%">&nbsp;</td>
+
+                      <!-- Card 2: Support Time -->
+                      <td width="32%" valign="top">
+                        <table
+                          class="card-box"
+                          width="100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                        >
+                          <tr style="background-color: #f1f1f1">
+                            <td
+                              class="inner-card-content"
+                              height="115"
+                              valign="top"
+                            >
+                              <div class="card-icon">
+                                <img
+                                  src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444721_a7b401d9643f4625_time.png"
+                                  alt="time"
+                                  width="24"
+                                  height="24"
+                                />
+                              </div>
+                              <p class="card-title">Support Time</p>
+                              <p class="card-text">
+                                9:00 AM – 6:00 PM<br />www.otoz.ai
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td width="2%">&nbsp;</td>
+
+                      <!-- Card 3: Need Help -->
+                      <td width="32%" valign="top">
+                        <table
+                          class="card-box"
+                          width="100%"
+                          cellpadding="0"
+                          cellspacing="0"
+                        >
+                          <tr style="background-color: #f1f1f1">
+                            <td
+                              class="inner-card-content"
+                              height="115"
+                              valign="top"
+                            >
+                              <div class="card-icon">
+                                <img
+                                  src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444819_486e9bfac3ee834d_email.png"
+                                  alt="help"
+                                  width="31"
+                                  height="24"
+                                />
+                              </div>
+                              <p class="card-title">Need Help?</p>
+                              <p class="card-text">
+                                info@otoz.ai<br />+813-6435-2269
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- BOTTOM BAR -->
+              <tr>
+                <td class="bottom-bar">
+                  <p class="bottom-bar-text">
+                    2026 <strong>Otoz.Ai</strong> All rights reserved
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

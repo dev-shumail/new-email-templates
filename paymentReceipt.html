@@ -6,12 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
       rel="stylesheet"
     />
-    <title>Transaction Failed – Otoz.AI</title>
+    <title>Payment Receipt - Otoz.AI</title>
     <style>
-      /* ===== RESET ===== */
       body,
       table,
       td,
@@ -24,157 +23,167 @@
         margin: 0;
         padding: 0;
       }
+
       table {
         border-collapse: collapse;
         border-spacing: 0;
       }
+
       img {
         border: 0;
         display: block;
       }
 
-      /* ===== BASE ===== */
       body {
-        background-color: white;
-        font-family: "Poppins", sans-serif;
+        background-color: #e7e7e7;
+        font-family: "Poppins", Arial, sans-serif;
         font-size: 14px;
-        color: #111111;
+        color: #1f1f1f;
       }
 
-      /* ===== WRAPPER ===== */
       .email-wrapper {
         width: 100%;
-        background-color: white;
-        padding: 30px 0;
-      }
-
-      /* ===== MAIN CONTAINER ===== */
-      .email-container {
-        width: 580px;
-        margin: 0 auto;
-        background-color: #fcfcfc;
-        overflow: hidden;
-      }
-
-      /* ===== HEADER ===== */
-      .header {
-        padding: 24px 30px 16px 30px;
-      }
-      .header-booking-label {
-        font-size: 16px;
-        color: #111111;
-        margin-bottom: 2px;
-      }
-      .header-confirmed {
-        font-size: 32px;
-        font-weight: 700;
-        color: #dc3545;
-        margin-bottom: 0;
-      }
-      .header-tagline {
-        font-size: 16px;
-        color: #111111;
-        font-weight: 700;
-        margin-top: 8px;
-      }
-
-      /* ===== META ROW (Date / Booking #) ===== */
-      .meta-row {
+        background-color: #e7e7e7;
         padding: 0;
       }
-      .meta-cell-label {
-        font-size: 12px;
+
+      .email-container {
+        width: 680px;
+        margin: 0 auto;
+        background-color: #f1f1f1;
+      }
+
+      .content-pad {
+        padding: 24px 26px 0;
+      }
+
+      .pre-title {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #1f1f1f;
+      }
+
+      .main-title {
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 700;
         color: #111111;
+      }
+
+      /* .logo-pill {
+        width: 66px;
+        height: 23px;
+        background-color: #139de8;
+        border-radius: 18px;
+        margin: 10px 0 0 auto;
+      } */
+
+      .meta-wrap {
+        padding: 18px 0 16px;
+        margin-top: 40px;
+      }
+
+      .meta-cell {
+        background-color: #ebebeb;
+        border-right: 1px solid #f7f7f7;
+        padding: 15px 10px;
+        text-align: center;
+      }
+
+      .meta-cell-last {
+        border-right: none;
+      }
+
+      .meta-label {
+        font-size: 8px;
+        line-height: 10px;
         font-weight: 600;
-        text-align: right;
-        padding-right: 4px;
-      }
-      .meta-cell-value {
-        font-size: 12px;
-        color: #111111;
-        font-weight: 300;
-        text-align: right;
+        color: #3c3c3c;
+        text-transform: uppercase;
       }
 
-      /* ===== GREETING ===== */
-      .greeting-section {
-        padding: 20px 30px;
-      }
-      .greeting-name {
+      .meta-value {
         font-size: 16px;
+        line-height: 22px;
         font-weight: 700;
-        margin-bottom: 8px;
-        color: #111111;
-      }
-      .greeting-body {
-        font-size: 12px;
-        color: #111111;
-        line-height: 1.4;
+        color: #1a4a7a;
+        padding-top: 6px;
       }
 
-      /* ===== SECTION HEADER (dark blue bar) ===== */
-      .section-header-inner {
-        background-color: #144d78;
+      .meta-value-status {
+        color: #16863a;
+      }
+
+      .space-bar {
+        padding: 5px 30px;
+      }
+
+      .section-bar {
+        background-color: #1f4e7e;
         color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 5px 11px;
+      }
+
+      .field-row {
+        border-bottom: 1px solid #969696;
+      }
+
+      .field-left {
         font-size: 12px;
-        font-weight: 700;
-        padding: 10px;
+        line-height: 22px;
+        font-weight: 600;
+        color: #1f1f1f;
+        padding: 7px 0 6px;
       }
-      /* ===== VEHICLE DETAILS ===== */
-      .vehicle-section {
-        padding: 16px 30px;
-      }
-      .vehicle-name {
-        font-size: 14px;
-        font-weight: 500;
-        color: rgba(17, 17, 17, 1);
-      }
-      .vehicle-specs {
-        font-size: 10px;
-        color: rgba(85, 85, 85, 1);
-        margin-top: 5px;
-      }
-      .vehicle-id {
-        font-size: 10px;
-        color: #333333;
+
+      .field-right {
+        font-size: 12px;
+        line-height: 22px;
         font-weight: 400;
-        margin-top: 18px;
+        color: #555555;
+        padding: 7px 0 6px;
+        text-align: right;
       }
-      .vehicle-old-price {
+
+      .section-gap {
+        height: 14px;
+      }
+
+      .summary-head {
+        background-color: #dfdfdf;
+        color: #111111;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 700;
+        padding: 6px 9px;
+      }
+
+      .total-row {
+        background-color: #d7e4ef;
+      }
+
+      .total-label {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #111111;
+        padding: 8px 9px;
+      }
+
+      .total-value {
         font-size: 16px;
         font-weight: 700;
-        color: #111111;
-        text-align: right;
-      }
-      .vehicle-new-price {
-        color: #28a745;
-        font-size: 10px;
+        color: #2898ef;
+        padding: 5px 8px;
         text-align: right;
       }
 
-      /* ===== TOTAL AMOUNT ===== */
-      .total-row {
-        background-color: #eaf6ff;
-        padding: 14px 30px;
-        border-bottom: 1px solid #eaf6ff;
-      }
-      .total-label {
-        font-size: 14px;
-        padding: 5px;
-        font-weight: 700;
-        color: #111111;
-        text-align: right;
-        width: 80%;
-      }
-      .total-value {
-        font-size: 20px;
-        font-weight: 700;
-        padding: 5px;
-        color: #2ba6ff;
-        text-align: right;
-      }
-
-      /* ===== FOOTER MESSAGE ===== */
       .footer-message {
         padding: 30px 30px 10px 30px;
         font-size: 12px;
@@ -231,138 +240,130 @@
     </style>
   </head>
   <body>
-    <!-- ===== EMAIL WRAPPER ===== -->
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td>
-          <!-- ===== MAIN CONTAINER ===== -->
           <table
             class="email-container"
             align="center"
             cellpadding="0"
             cellspacing="0"
           >
-            <!-- ============================= -->
-            <!-- HEADER: Logo + Booking Status -->
-            <!-- ============================= -->
             <tr>
-              <td class="header">
+              <td class="content-pad">
                 <table width="100%" cellpadding="0" cellspacing="0">
-                  <!-- ROW 1 -->
                   <tr>
-                    <!-- Left: Booking / Confirmed -->
-                    <td width="60%" valign="top">
-                      <p class="header-booking-label">Transaction</p>
-                      <p class="header-confirmed">Failed</p>
+                    <td width="56%" valign="top">
+                      <p class="pre-title">PAYMENT</p>
+                      <p class="main-title">RECEIPT</p>
                     </td>
-
-                    <!-- Right: Logo -->
-                    <td width="40%" valign="top" align="right">
+                    <td width="44%" valign="top" align="right">
                       <img
-                        src="https://images.otoz.ai/logo/1783573580_3bb166a6b1f9678a_otoz-logo.png"
+                        src="https://agent.otoz.ai/build/assets/otozNewLogo-Bun2ec8w.png"
                         alt="Otoz.AI Logo"
-                        width="170"
-                        style="display: block"
+                        width="125"
                       />
+                      <div class="logo-pill">&nbsp;</div>
                     </td>
                   </tr>
                 </table>
 
-                <table>
+                <table
+                  class="meta-wrap"
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                >
                   <tr>
-                    <!-- Left: Tagline -->
-                    <td width="100%">
-                      <p class="header-tagline">
-                        The First Cross Border Marketplace For Automobiles
-                      </p>
+                    <td class="meta-cell" width="25%">
+                      <p class="meta-label">ORDER ID</p>
+                      <p class="meta-value">ABC123456</p>
+                    </td>
+                    <td class="meta-cell" width="25%">
+                      <p class="meta-label">Date</p>
+                      <p class="meta-value">April 10, 2026</p>
+                    </td>
+                    <td class="meta-cell" width="25%">
+                      <p class="meta-label">TIME</p>
+                      <p class="meta-value">12:00 UTC</p>
+                    </td>
+                    <td class="meta-cell meta-cell-last" width="25%">
+                      <p class="meta-label">STATUS</p>
+                      <p class="meta-value meta-value-status">COMPLETED</p>
                     </td>
                   </tr>
                 </table>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 0 30px">
+
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td
-                      height="1"
-                      style="
-                        background-color: #000000;
-                        font-size: 0;
-                        line-height: 0;
-                      "
-                    >
-                      &nbsp;
-                    </td>
+                    <td class="space-bar"></td>
                   </tr>
                 </table>
-              </td>
-            </tr>
 
-            <!-- ==================== -->
-            <!-- GREETING SECTION     -->
-            <!-- ==================== -->
-            <tr>
-              <td class="greeting-section">
-                <p class="greeting-name">Dear Adil,</p>
-                <p class="greeting-body">
-                  Unfortunately, your payment for the following car could not be
-                  completed:
-                </p>
-              </td>
-            </tr>
-
-            <!-- ========================= -->
-            <!-- SECTION HEADER: Vehicle   -->
-            <!-- ========================= -->
-            <tr>
-              <td style="padding: 0 30px">
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td class="section-header-inner">Vehicle Details</td>
+                    <td class="section-bar">BUYER DETAILS</td>
                   </tr>
                 </table>
-              </td>
-            </tr>
 
-            <!-- ========================= -->
-            <!-- VEHICLE DETAILS ROW       -->
-            <!-- ========================= -->
-            <tr>
-              <td class="vehicle-section">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr class="field-row">
+                    <td class="field-left">Name</td>
+                    <td class="field-right">John Doe</td>
+                  </tr>
+                  <tr class="field-row">
+                    <td class="field-left">Email</td>
+                    <td class="field-right">john@example.com</td>
+                  </tr>
+                </table>
+
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <!-- Car Image placeholder — replace src with actual car photo -->
-                    <td width="100" valign="top">
-                      <img
-                        src="./assets/dummy.png"
-                        alt="otoz.ai car"
-                        width="137"
-                        height="91"
-                      />
-                    </td>
+                    <td class="section-gap">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="section-bar">ITEM DETAILS</td>
+                  </tr>
+                </table>
 
-                    <!-- Car Info -->
-                    <td style="padding-left: 14px; vertical-align: middle">
-                      <p class="vehicle-name">Porsche Cayman GT4</p>
-                      <p class="vehicle-specs">
-                        2020/5 | Hybrid | 27,478km | 1,500cc | AT
-                      </p>
-                      <p class="vehicle-id">Otoz- 123</p>
-                    </td>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr class="field-row">
+                    <td class="field-left">Purpose</td>
+                    <td class="field-right">Car Purchase</td>
+                  </tr>
+                  <tr class="field-row">
+                    <td class="field-left">Vehicle</td>
+                    <td class="field-right">Toyota Corolla 2020</td>
+                  </tr>
+                </table>
 
-                    <!-- Price -->
-                    <td width="110" style="vertical-align: middle">
-                      <p class="vehicle-old-price">$88,000</p>
-                    </td>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="space-bar"></td>
+                  </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="summary-head">Payment Summary</td>
+                  </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="space-bar"></td>
+                  </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr class="total-row">
+                    <td class="total-label">Total Amount</td>
+                    <td class="total-value">$ 88,000</td>
                   </tr>
                 </table>
               </td>
             </tr>
 
-            <!-- ========================== -->
-            <!-- FOOTER MESSAGE             -->
-            <!-- ========================== -->
             <tr>
               <td class="footer-message">
                 If you have any further queries, feel free to reach out. We look
@@ -370,9 +371,6 @@
               </td>
             </tr>
 
-            <!-- ==================================== -->
-            <!-- CARDS: Thank You / Support / Help    -->
-            <!-- ==================================== -->
             <tr>
               <td class="cards-section">
                 <!-- gap column approach for spacing between cards -->
@@ -480,22 +478,16 @@
                 </table>
               </td>
             </tr>
-
-            <!-- ========================== -->
-            <!-- BOTTOM BAR                 -->
-            <!-- ========================== -->
             <tr>
               <td class="bottom-bar">
                 <p class="bottom-bar-text">
-                  2026 <span>Otoz.Ai</span> All rights reserved
+                  2026 <strong>Otoz.Ai</strong> All rights reserved
                 </p>
               </td>
             </tr>
           </table>
-          <!-- end .email-container -->
         </td>
       </tr>
     </table>
-    <!-- end .email-wrapper -->
   </body>
 </html>
