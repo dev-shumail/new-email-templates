@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Vehicle Request – Otoz.AI</title>
+    <title>Proforma Invoice – Otoz.AI</title>
     <style>
       /* ===== RESET ===== */
       body,
@@ -258,6 +258,116 @@
         color: #ffffff;
         font-weight: 700;
       }
+
+      /* ===== VEHICLE DETAILS CARD ===== */
+      .vd-wrap {
+        padding: 0 30px;
+      }
+      .vd-card {
+        width: 100%;
+      }
+      .vd-header td {
+        background-color: #144d78;
+        padding: 10px 14px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .vd-view-btn {
+        text-align: right;
+      }
+      .vd-view-btn a {
+        display: inline-block;
+        background-color: #2ba6ff;
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 5px 14px;
+        border-radius: 14px;
+      }
+      .vd-body td {
+        background-color: #f2f4f7;
+      }
+      .vd-title-row td {
+        padding: 14px 14px 8px 14px;
+      }
+      .vd-car-title {
+        color: #144d78;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .vd-stock-id {
+        color: #7a7f87;
+        font-size: 10px;
+        text-align: right;
+      }
+      .vd-divider td {
+        border-top: 1px solid #d9dde3;
+        padding: 0;
+        height: 1px;
+        line-height: 1px;
+        font-size: 0;
+      }
+      .vd-specs td {
+        padding: 12px 14px 4px 14px;
+        vertical-align: top;
+        width: 20%;
+      }
+      .vd-spec-label {
+        color: #9aa0a8;
+        font-size: 10px;
+        display: block;
+        margin-bottom: 3px;
+      }
+      .vd-spec-value {
+        color: #1a1a1a;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .vd-spacer td {
+        padding: 6px 0;
+        background-color: #f2f4f7;
+        font-size: 0;
+        line-height: 0;
+      }
+
+      /* ===== PRICE BREAKDOWN CARD ===== */
+      .pb-wrap {
+        padding: 16px 30px 0 30px;
+      }
+      .pb-card {
+        width: 100%;
+      }
+      .pb-row td {
+        padding: 12px 14px;
+        border-bottom: 1px solid #e2e5ea;
+        font-size: 12px;
+        color: #333333;
+        background-color: #ffffff;
+      }
+      .pb-row td.value {
+        text-align: right;
+      }
+      .pb-red {
+        color: #dc3545 !important;
+        font-weight: 700;
+      }
+      .pb-gray {
+        color: #8b909a;
+      }
+      .pb-total-row td {
+        padding: 12px 14px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #1a1a1a;
+        border-bottom: none;
+        background-color: #ffffff;
+      }
+      .pb-total-row td.value {
+        text-align: right;
+        color: #2ba6ff;
+      }
     </style>
   </head>
   <body>
@@ -282,8 +392,8 @@
                   <tr>
                     <!-- Left: Consignee / Upload -->
                     <td width="60%" valign="top">
-                      <p class="header-booking-label">Vehicle Request</p>
-                      <p class="header-confirmed">Confirmation</p>
+                      <p class="header-booking-label">Vehicle Received</p>
+                      <p class="header-confirmed">Request</p>
                     </td>
 
                     <!-- Right: Logo -->
@@ -352,22 +462,118 @@
             <!-- ==================== -->
             <tr>
               <td class="greeting-section">
-                <p class="greeting-name">Dear Adil,</p>
+                <p class="greeting-name">Hi Customer,</p>
                 <p class="greeting-body">
-                  Thank you for submitting your request on our website. We have
-                  added your request to our system, and our team is actively
-                  monitoring new listings to find your desired vehicle.
+                  Good news! The 2013 TOYOTA AQUA you were looking for is now
+                  available on our website.
                 </p>
-                <p class="greeting-body" style="margin-top: 10px">
-                  As soon as a matching vehicle becomes available, you'll be the
-                  first to know! If you have any questions or would like to
-                  update your preferences, feel free to contact us.
-                </p>
-                <p class="greeting-body" style="margin-top: 10px">
-                  We are dedicated to offering the best prices and highest
-                  quality vehicles exported from Japan, and we appreciate your
-                  engagement in responding to our prices for negotiation.
-                </p>
+              </td>
+            </tr>
+
+            <!-- ==================================== -->
+            <!-- VEHICLE DETAILS CARD                  -->
+            <!-- ==================================== -->
+            <tr>
+              <td class="vd-wrap">
+                <table class="vd-card" cellpadding="0" cellspacing="0">
+                  <tr class="vd-header">
+                    <td style="width: 70%">Vehicle Details</td>
+                    <td class="vd-view-btn" style="width: 30%">
+                      <a href="#">View Image</a>
+                    </td>
+                  </tr>
+
+                  <tr class="vd-body vd-title-row">
+                    <td class="vd-car-title">2013 Toyota Aqua</td>
+                    <td class="vd-stock-id">Stock ID: OTOZ-26</td>
+                  </tr>
+
+                  <tr class="vd-body">
+                    <td colspan="2">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="width: 100%"
+                      >
+                        <tr class="vd-specs">
+                          <td>
+                            <span class="vd-spec-label">Model</span>
+                            <span class="vd-spec-value">AQUA</span>
+                          </td>
+                          <td>
+                            <span class="vd-spec-label">Year</span>
+                            <span class="vd-spec-value">2013</span>
+                          </td>
+                          <td>
+                            <span class="vd-spec-label">Mileage</span>
+                            <span class="vd-spec-value">140,826 km</span>
+                          </td>
+                          <td>
+                            <span class="vd-spec-label">Engine</span>
+                            <span class="vd-spec-value">1,500 cc</span>
+                          </td>
+                          <td>
+                            <span class="vd-spec-label">Door</span>
+                            <span class="vd-spec-value">4</span>
+                          </td>
+                        </tr>
+                        <tr class="vd-specs">
+                          <td>
+                            <span class="vd-spec-label">Fuel</span>
+                            <span class="vd-spec-value">Petrol</span>
+                          </td>
+                          <td>
+                            <span class="vd-spec-label">Transmission</span>
+                            <span class="vd-spec-value">AT</span>
+                          </td>
+                          <td>
+                            <span class="vd-spec-label">Steering</span>
+                            <span class="vd-spec-value">Right</span>
+                          </td>
+                          <td>
+                            <span class="vd-spec-label">Color</span>
+                            <span class="vd-spec-value">Black</span>
+                          </td>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr class="vd-spacer">
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ==================================== -->
+            <!-- PRICE BREAKDOWN CARD                  -->
+            <!-- ==================================== -->
+            <tr>
+              <td class="pb-wrap">
+                <table class="pb-card" cellpadding="0" cellspacing="0">
+                  <tr class="vd-header">
+                    <td colspan="2">Price Breakdown</td>
+                  </tr>
+
+                  <tr class="pb-row">
+                    <td>Vehicle Price</td>
+                    <td class="value pb-red">$ 2,104</td>
+                  </tr>
+                  <tr class="pb-row">
+                    <td>Freight Cost</td>
+                    <td class="value pb-gray">ASK</td>
+                  </tr>
+                  <tr class="pb-row">
+                    <td>Insurance Fee</td>
+                    <td class="value pb-gray">ASK</td>
+                  </tr>
+                  <tr class="pb-total-row">
+                    <td>Total Cost</td>
+                    <td class="value">ASK</td>
+                  </tr>
+                </table>
               </td>
             </tr>
 
