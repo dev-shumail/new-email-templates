@@ -35,347 +35,246 @@
 
       /* ===== BASE ===== */
       body {
-        background-color: white;
+        background-color: #ffffff;
         font-family: "Poppins", sans-serif;
         font-size: 14px;
         color: #111111;
       }
 
-      /* ===== WRAPPER ===== */
       .email-wrapper {
         width: 100%;
-        background-color: white;
+        background-color: #ffffff;
         padding: 30px 0;
       }
 
-      /* ===== MAIN CONTAINER ===== */
       .email-container {
-        width: 580px;
+        width: 750px;
         margin: 0 auto;
         background-color: #fcfcfc;
         overflow: hidden;
       }
 
+      .content-pad {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
       /* ===== HEADER ===== */
-      .header {
-        padding: 24px 30px 16px 30px;
-      }
-      .header-booking-label {
-        font-size: 16px;
-        color: #111111;
-        margin-bottom: 2px;
-      }
-      .header-confirmed {
-        font-size: 32px;
-        font-weight: 700;
-        color: #28a745;
-        margin-bottom: 0;
-      }
-      .header-tagline {
-        font-size: 16px;
-        color: #111111;
-        font-weight: 700;
-        margin-top: 8px;
-      }
-
-      /* ===== META ROW (Date / Booking #) ===== */
-      .meta-row {
-        padding: 0;
-      }
-      .meta-cell-label {
+      .header-label {
         font-size: 12px;
-        color: #111111;
         font-weight: 600;
-        text-align: right;
-        padding-right: 4px;
-      }
-      .meta-cell-value {
-        font-size: 12px;
+        letter-spacing: 1px;
         color: #111111;
-        font-weight: 300;
-        text-align: right;
+        text-transform: uppercase;
       }
-
-      /* ===== GREETING ===== */
-      .greeting-section {
-        padding: 20px 30px;
-      }
-      .greeting-name {
-        font-size: 16px;
-        font-weight: 700;
-        margin-bottom: 8px;
-        color: #111111;
-      }
-      .greeting-body {
-        font-size: 12px;
-        color: #111111;
-        line-height: 1.4;
-      }
-
-      /* ===== SECTION HEADER (dark blue bar) ===== */
-      .section-header-inner {
-        background-color: #144d78;
-        color: #ffffff;
-        font-size: 12px;
-        font-weight: 700;
-        padding: 10px;
-      }
-      /* ===== VEHICLE DETAILS ===== */
-      .vehicle-section {
-        padding: 16px 30px;
-      }
-      .vehicle-name {
-        font-size: 14px;
-        font-weight: 500;
-        color: rgba(17, 17, 17, 1);
-      }
-      .vehicle-specs {
-        font-size: 10px;
-        color: rgba(85, 85, 85, 1);
-        margin-top: 5px;
-      }
-      .vehicle-id {
-        font-size: 10px;
-        color: rgba(51, 51, 51, 1);
-        margin-top: 18px;
-        font-weight: 400;
-      }
-      .vehicle-old-price {
-        font-size: 12px;
-        color: rgba(119, 119, 119, 1);
-        text-decoration: line-through;
-        text-align: right;
-      }
-      .vehicle-new-price {
-        font-size: 16px;
-        font-weight: 800;
-        color: #dc3545;
-        text-align: right;
-      }
-
-      /* ===== TOTAL AMOUNT ===== */
-      .total-row {
-        background-color: #eaf6ff;
-        padding: 14px 30px;
-        border-bottom: 1px solid #eaf6ff;
-      }
-      .total-label {
-        font-size: 14px;
-        padding: 5px;
-        font-weight: 700;
-        color: #111111;
-        text-align: right;
-        width: 80%;
-      }
-      .total-value {
-        font-size: 20px;
-        font-weight: 700;
-        padding: 5px;
-        color: #2ba6ff;
-        text-align: right;
-      }
-
-      /* ===== SHIPPING DETAILS ===== */
-      .shipping-row {
-        border-bottom: 1px solid #111111;
-      }
-      .shipping-icon-container {
-        width: 30px;
-      }
-      .shipping-icon {
-        width: 28px;
-        height: 16px;
-        text-align: center;
-        padding-left: 10px;
-        vertical-align: top;
-      }
-      .shipping-label {
-        font-size: 13px;
-        font-weight: 700;
-        color: #111111;
-        padding-left: 10px;
-        vertical-align: bottom;
-      }
-      .shipping-value {
-        font-size: 13px;
-        color: #111111;
-        font-weight: 300;
-        text-align: right;
-        vertical-align: middle;
-      }
-
-      /* ===== FOOTER MESSAGE ===== */
-      .footer-message {
-        padding: 30px 30px 10px 30px;
-        font-size: 12px;
-        font-weight: 300;
-        color: #111111;
-        text-align: center;
-      }
-
-      /* ===== ICON CARDS (Thank You / Support / Help) ===== */
-      .cards-section {
-        padding: 10px 20px 20px 20px;
-      }
-      .card-box {
-        background-color: #ffffff;
-        padding: 14px 8px;
-        text-align: center;
-        padding: 0px 10px;
-        height: 115.625px;
-      }
-      .inner-card-content {
-        padding: 10px;
-      }
-      .card-icon {
-        margin: 0 auto;
-        width: 36px;
-        padding: 14px 0px;
-      }
-      .card-title {
-        font-size: 14px;
+      .header-title {
+        font-size: 40px;
         font-weight: 600;
         color: #111111;
-        margin-bottom: 10px;
+        letter-spacing: 1px;
+        padding-top: 2px;
       }
-      .card-text {
+      .meta-table {
+        width: 190px;
+      }
+      .meta-label {
         font-size: 11px;
-        color: #000000;
-        line-height: 1.5;
-      }
-
-      /* ===== BOTTOM BAR ===== */
-      .bottom-bar {
-        background-color: #1b3a5c;
-        padding: 14px 30px;
-        text-align: center;
-      }
-      .bottom-bar-text {
-        font-size: 12px;
-        color: #aac5e0;
-      }
-      .bottom-bar-text span {
-        color: #ffffff;
-        font-weight: 700;
-      }
-
-      /* ===== VEHICLE DETAILS CARD ===== */
-      .vd-wrap {
-        padding: 0 30px;
-      }
-      .vd-card {
-        width: 100%;
-      }
-      .vd-header td {
-        background-color: #144d78;
-        padding: 10px 14px;
-        color: #ffffff;
-        font-size: 12px;
-        font-weight: 700;
-      }
-      .vd-view-btn {
-        text-align: right;
-      }
-      .vd-view-btn a {
-        display: inline-block;
-        background-color: #2ba6ff;
-        color: #ffffff;
-        font-size: 10px;
-        font-weight: 700;
-        text-decoration: none;
-        padding: 5px 14px;
-        border-radius: 14px;
-      }
-      .vd-body td {
-        background-color: #f2f4f7;
-      }
-      .vd-title-row td {
-        padding: 14px 14px 8px 14px;
-      }
-      .vd-car-title {
-        color: #144d78;
-        font-size: 15px;
-        font-weight: 700;
-      }
-      .vd-stock-id {
+        font-weight: 600;
         color: #7a7f87;
-        font-size: 10px;
         text-align: right;
+        padding-right: 10px;
+        white-space: nowrap;
       }
-      .vd-divider td {
-        border-top: 1px solid #d9dde3;
-        padding: 0;
+      .meta-value {
+        font-size: 12px;
+        font-weight: 600;
+        color: #111111;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .divider-row {
         height: 1px;
         line-height: 1px;
         font-size: 0;
-      }
-      .vd-specs td {
-        padding: 12px 14px 4px 14px;
-        vertical-align: top;
-        width: 20%;
-      }
-      .vd-spec-label {
-        color: #9aa0a8;
-        font-size: 10px;
-        display: block;
-        margin-bottom: 3px;
-      }
-      .vd-spec-value {
-        color: #1a1a1a;
-        font-size: 12px;
-        font-weight: 700;
-      }
-      .vd-spacer td {
-        padding: 6px 0;
-        background-color: #f2f4f7;
-        font-size: 0;
-        line-height: 0;
+        background-color: #000000;
       }
 
-      /* ===== PRICE BREAKDOWN CARD ===== */
-      .pb-wrap {
-        padding: 16px 30px 0 30px;
+      /* ===== SHIPPER / BUYER / CONDITION ===== */
+      .info-col {
+        vertical-align: top;
       }
-      .pb-card {
-        width: 100%;
-      }
-      .pb-row td {
-        padding: 12px 14px;
-        border-bottom: 1px solid #e2e5ea;
-        font-size: 12px;
-        color: #333333;
-        background-color: #ffffff;
-      }
-      .pb-row td.value {
-        text-align: right;
-      }
-      .pb-red {
-        color: #dc3545 !important;
-        font-weight: 700;
-      }
-      .pb-gray {
-        color: #8b909a;
-      }
-      .pb-total-row td {
-        padding: 12px 14px;
+      .info-heading {
         font-size: 13px;
         font-weight: 700;
-        color: #1a1a1a;
-        border-bottom: none;
-        background-color: #ffffff;
+        color: #111111;
+        padding-bottom: 8px;
       }
-      .pb-total-row td.value {
+      .info-text {
+        font-size: 10.5px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .cond-table {
+        width: 100%;
+      }
+      .cond-label {
+        font-size: 10.5px;
+        font-weight: 500;
+        color: #111111;
+        text-align: left;
+        vertical-align: top;
+        padding-bottom: 6px;
+        width: 95px;
+      }
+      .cond-value {
+        font-size: 10.5px;
+        font-weight: 400;
+        color: #333333;
         text-align: right;
-        color: #2ba6ff;
+        vertical-align: top;
+        padding-bottom: 6px;
+      }
+
+      /* ===== SECTION HEADER BAR ===== */
+      .section-header-bar {
+        background-color: #144d78;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 14px;
+      }
+
+      /* ===== UNITS DESCRIPTION ===== */
+      .ud-col {
+        vertical-align: top;
+        width: 50%;
+      }
+      .ud-col-left {
+        padding-right: 15px;
+      }
+      .ud-col-right {
+        padding-left: 15px;
+      }
+      .ud-table {
+        width: 100%;
+      }
+      .ud-row td {
+        border-bottom: 0.5px solid #000000;
+        padding: 9px;
+      }
+      .ud-label {
+        font-size: 11px;
+        font-weight: 500;
+        color: #333333;
+        text-align: left;
+        font-weight: 600;
+        width: 140px;
+      }
+      .ud-value {
+        font-size: 11px;
+        color: #111111;
+        text-align: right;
+      }
+      .ud-value.price {
+        color: #dc3545;
+      }
+      .ud-row-grey td {
+        background-color: #eeeeee;
+        border-top: 4px solid #fcfcfc;
+        border-bottom: 4px solid #fcfcfc;
+      }
+      .ud-total-paid td {
+        border-top: 6px solid #fcfcfc;
+        background-color: #2ba6ff;
+        border-bottom: none;
+        padding: 9px;
+      }
+      .ud-total-paid .ud-label {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .ud-total-paid .ud-value {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      /* ===== PAYMENT DETAILS ===== */
+      .pd-col {
+        vertical-align: top;
+        width: 50%;
+      }
+      .pd-col-left {
+        padding-right: 15px;
+      }
+      .pd-col-right {
+        padding-left: 15px;
+      }
+      .pd-heading {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        padding: 14px 0 8px 0;
+      }
+      .pd-table {
+        width: 100%;
+      }
+      .pd-row td {
+        vertical-align: top;
+        padding-bottom: 7px;
+        font-size: 10.5px;
+      }
+      .pd-label {
+        font-weight: 600;
+        color: #111111;
+        text-align: left;
+        width: 105px;
+      }
+      .pd-value {
+        font-weight: 400;
+        color: #333333;
+        text-align: left;
+      }
+
+      /* ===== TERMS AND CONDITIONS ===== */
+      .terms-heading {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        padding: 20px 0 8px 0;
+      }
+      .terms-item {
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 1.6;
+        padding-bottom: 4px;
+      }
+
+      /* ===== FOOTER BAR ===== */
+      .footer-bar {
+        background-color: #1b3a5c;
+        padding: 14px 30px;
+      }
+      .footer-bar-text {
+        font-size: 11px;
+        color: #aac5e0;
+      }
+      .footer-bar-link {
+        font-size: 11px;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: right;
       }
     </style>
   </head>
   <body>
-    <!-- ===== EMAIL WRAPPER ===== -->
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td>
-          <!-- ===== MAIN CONTAINER ===== -->
           <table
             class="email-container"
             align="center"
@@ -383,53 +282,39 @@
             cellspacing="0"
           >
             <!-- ============================= -->
-            <!-- HEADER: Logo + Booking Status -->
+            <!-- HEADER                        -->
             <!-- ============================= -->
             <tr>
-              <td class="header">
+              <td class="content-pad" style="padding-top: 24px">
                 <table width="100%" cellpadding="0" cellspacing="0">
-                  <!-- ROW 1 -->
                   <tr>
-                    <!-- Left: Consignee / Upload -->
-                    <td width="60%" valign="top">
-                      <p class="header-booking-label">Vehicle Received</p>
-                      <p class="header-confirmed">Request</p>
+                    <td width="55%" valign="top">
+                      <p class="header-label">Invoice</p>
+                      <p class="header-title">PROFORMA</p>
                     </td>
-
-                    <!-- Right: Logo -->
-                    <td width="40%" valign="top" align="right">
+                    <td width="45%" valign="top" align="right">
                       <img
                         src="https://images.otoz.ai/logo/1783573580_3bb166a6b1f9678a_otoz-logo.png"
                         alt="Otoz.AI Logo"
-                        width="170"
-                        style="display: block"
+                        width="150"
+                        style="display: block; margin-left: auto"
                       />
-                    </td>
-                  </tr>
-
-                  <!-- ROW 2 -->
-                  <tr>
-                    <!-- Left: Tagline -->
-                    <td width="60%">
-                      <p class="header-tagline">
-                        The First Cross Border<br />
-                        Marketplace For Automobiles
-                      </p>
-                    </td>
-
-                    <!-- Right: Date + Booking # -->
-                    <td width="40%" valign="bottom" align="right">
-                      <table width="70%">
+                      <table
+                        class="meta-table"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="margin-top: 14px; margin-left: auto"
+                      >
                         <tr>
-                          <td class="meta-cell-label">Date:</td>
-                          <td class="meta-cell-value">02/08/26</td>
+                          <td class="meta-label">Date (MM/DD/YY)</td>
+                          <td class="meta-value">02/08/26</td>
                         </tr>
                         <tr>
-                          <td class="meta-cell-label" style="padding-top: 6px">
-                            Booking #:
+                          <td class="meta-label" style="padding-top: 4px">
+                            Invoice #
                           </td>
-                          <td class="meta-cell-value" style="padding-top: 6px">
-                            A7WY7WB47
+                          <td class="meta-value" style="padding-top: 4px">
+                            2026020BJPN002
                           </td>
                         </tr>
                       </table>
@@ -438,257 +323,201 @@
                 </table>
               </td>
             </tr>
+
+            <!-- ============================= -->
+            <!-- SHIPPER / BUYER / CONDITION   -->
+            <!-- ============================= -->
             <tr>
-              <td style="padding: 0 30px">
+              <td
+                class="content-pad"
+                style="padding-top: 18px; padding-bottom: 8px"
+              >
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td
-                      height="1"
-                      style="
-                        background-color: #000000;
-                        font-size: 0;
-                        line-height: 0;
-                      "
+                      class="info-col"
+                      width="36%"
+                      style="padding-right: 12px"
                     >
-                      &nbsp;
+                      <p class="info-heading">Shipper / Seller</p>
+                      <p class="info-text">
+                        otoz.Ai Japan K.K.<br />
+                        2-10-13, Minami Azabu, Tokyo, Japan<br />
+                        Phone: +81-3-6432-2269<br />
+                        Email: ops@otoz.ai
+                      </p>
                     </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ==================== -->
-            <!-- GREETING SECTION     -->
-            <!-- ==================== -->
-            <tr>
-              <td class="greeting-section">
-                <p class="greeting-name">Hi Customer,</p>
-                <p class="greeting-body">
-                  Good news! The 2013 TOYOTA AQUA you were looking for is now
-                  available on our website.
-                </p>
-              </td>
-            </tr>
-
-            <!-- ==================================== -->
-            <!-- VEHICLE DETAILS CARD                  -->
-            <!-- ==================================== -->
-            <tr>
-              <td class="vd-wrap">
-                <table class="vd-card" cellpadding="0" cellspacing="0">
-                  <tr class="vd-header">
-                    <td style="width: 70%">Vehicle Details</td>
-                    <td class="vd-view-btn" style="width: 30%">
-                      <a href="#">View Image</a>
+                    <td
+                      class="info-col"
+                      width="32%"
+                      style="padding-right: 12px"
+                    >
+                      <p class="info-heading">Buyer Details</p>
+                      <p class="info-text">
+                        Carhoot App Ltd.<br />
+                        P.O box 316-00618, Nairobi, Kenya<br />
+                        Phone: +072191999
+                      </p>
                     </td>
-                  </tr>
-
-                  <tr class="vd-body vd-title-row">
-                    <td class="vd-car-title">2013 Toyota Aqua</td>
-                    <td class="vd-stock-id">Stock ID: OTOZ-26</td>
-                  </tr>
-
-                  <tr class="vd-body">
-                    <td colspan="2">
-                      <table
-                        cellpadding="0"
-                        cellspacing="0"
-                        style="width: 100%"
-                      >
-                        <tr class="vd-specs">
-                          <td>
-                            <span class="vd-spec-label">Model</span>
-                            <span class="vd-spec-value">AQUA</span>
-                          </td>
-                          <td>
-                            <span class="vd-spec-label">Year</span>
-                            <span class="vd-spec-value">2013</span>
-                          </td>
-                          <td>
-                            <span class="vd-spec-label">Mileage</span>
-                            <span class="vd-spec-value">140,826 km</span>
-                          </td>
-                          <td>
-                            <span class="vd-spec-label">Engine</span>
-                            <span class="vd-spec-value">1,500 cc</span>
-                          </td>
-                          <td>
-                            <span class="vd-spec-label">Door</span>
-                            <span class="vd-spec-value">4</span>
-                          </td>
+                    <td class="info-col" width="32%">
+                      <p class="info-heading">Condition</p>
+                      <table class="cond-table" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="cond-label">Port of Loading</td>
+                          <td class="cond-value">Any</td>
                         </tr>
-                        <tr class="vd-specs">
-                          <td>
-                            <span class="vd-spec-label">Fuel</span>
-                            <span class="vd-spec-value">Petrol</span>
-                          </td>
-                          <td>
-                            <span class="vd-spec-label">Transmission</span>
-                            <span class="vd-spec-value">AT</span>
-                          </td>
-                          <td>
-                            <span class="vd-spec-label">Steering</span>
-                            <span class="vd-spec-value">Right</span>
-                          </td>
-                          <td>
-                            <span class="vd-spec-label">Color</span>
-                            <span class="vd-spec-value">Black</span>
-                          </td>
-                          <td>&nbsp;</td>
+                        <tr>
+                          <td class="cond-label">Country of origin</td>
+                          <td class="cond-value">JAPAN</td>
+                        </tr>
+                        <tr>
+                          <td class="cond-label">Incoterms</td>
+                          <td class="cond-value">2020 CFR</td>
+                        </tr>
+                        <tr>
+                          <td class="cond-label">Port of Discharge</td>
+                          <td class="cond-value">Mombasa, Kenya</td>
                         </tr>
                       </table>
                     </td>
                   </tr>
+                </table>
+              </td>
+            </tr>
 
-                  <tr class="vd-spacer">
-                    <td colspan="2">&nbsp;</td>
+            <!-- Divider -->
+            <tr>
+              <td class="content-pad">
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="margin-bottom: 12px"
+                >
+                  <tr>
+                    <td class="divider-row">&nbsp;</td>
                   </tr>
                 </table>
               </td>
             </tr>
 
-            <!-- ==================================== -->
-            <!-- PRICE BREAKDOWN CARD                  -->
-            <!-- ==================================== -->
+            <!-- ============================= -->
+            <!-- UNITS DESCRIPTION             -->
+            <!-- ============================= -->
             <tr>
-              <td class="pb-wrap">
-                <table class="pb-card" cellpadding="0" cellspacing="0">
-                  <tr class="vd-header">
-                    <td colspan="2">Price Breakdown</td>
-                  </tr>
-
-                  <tr class="pb-row">
-                    <td>Vehicle Price</td>
-                    <td class="value pb-red">$ 2,104</td>
-                  </tr>
-                  <tr class="pb-row">
-                    <td>Freight Cost</td>
-                    <td class="value pb-gray">ASK</td>
-                  </tr>
-                  <tr class="pb-row">
-                    <td>Insurance Fee</td>
-                    <td class="value pb-gray">ASK</td>
-                  </tr>
-                  <tr class="pb-total-row">
-                    <td>Total Cost</td>
-                    <td class="value">ASK</td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ========================== -->
-            <!-- FOOTER MESSAGE             -->
-            <!-- ========================== -->
-            <tr>
-              <td class="footer-message">
-                If you have any further queries, feel free to reach out. We look
-                forward to your response.
-              </td>
-            </tr>
-
-            <!-- ==================================== -->
-            <!-- CARDS: Thank You / Support / Help    -->
-            <!-- ==================================== -->
-            <tr>
-              <td class="cards-section">
-                <!-- gap column approach for spacing between cards -->
+              <td class="content-pad">
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <!-- Card 1: Thank You -->
-                    <td width="32%" valign="top">
-                      <table
-                        class="card-box"
-                        width="100%"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
-                        <tr>
-                          <td
-                            class="inner-card-content"
-                            height="115"
-                            valign="top"
-                          >
-                            <div class="card-icon">
-                              <img
-                                src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444743_f46366ae6717b32d_thanks.png"
-                                alt="thanks"
-                                width="24"
-                                height="28"
-                              />
-                            </div>
-                            <p class="card-title">Thank You!</p>
-                            <p class="card-text">
-                              We Appreciate<br />your business
-                            </p>
+                    <td class="section-header-bar">Units Description</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="content-pad"
+                style="padding-top: 14px; padding-bottom: 14px"
+              >
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <!-- LEFT COLUMN: specs -->
+                    <td class="ud-col ud-col-left">
+                      <table class="ud-table" cellpadding="0" cellspacing="0">
+                        <tr class="ud-row">
+                          <td class="ud-label">Make</td>
+                          <td class="ud-value">MERCEDES BENZ</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Model</td>
+                          <td class="ud-value">GLC</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Model code</td>
+                          <td class="ud-value">LDA-253905C</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Chassis No</td>
+                          <td class="ud-value">WDC2539052F422655</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Month / Year</td>
+                          <td class="ud-value">6 / 2025</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Color</td>
+                          <td class="ud-value">Black</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Transmission</td>
+                          <td class="ud-value">AT</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Fuel</td>
+                          <td class="ud-value">Petrol</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Engine size(cc)</td>
+                          <td class="ud-value">2140</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label" style="border-bottom: none">
+                            Seats
+                          </td>
+                          <td class="ud-value" style="border-bottom: none">
+                            4
                           </td>
                         </tr>
                       </table>
                     </td>
 
-                    <!-- GAP between card 1 and 2 -->
-                    <td width="2%">&nbsp;</td>
-
-                    <!-- Card 2: Support Time -->
-                    <td width="32%" valign="top">
-                      <table
-                        class="card-box"
-                        width="100%"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
-                        <tr>
-                          <td
-                            class="inner-card-content"
-                            height="115"
-                            valign="top"
-                          >
-                            <div class="card-icon">
-                              <img
-                                src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444721_a7b401d9643f4625_time.png"
-                                alt="time"
-                                width="24"
-                                height="24"
-                              />
-                            </div>
-                            <p class="card-title">Support Time</p>
-                            <p class="card-text">
-                              9:00 AM – 6:00 PM<br />www.otoz.ai
-                            </p>
+                    <!-- RIGHT COLUMN: type/remarks + pricing + Total Paid -->
+                    <td class="ud-col ud-col-right">
+                      <table class="ud-table" cellpadding="0" cellspacing="0">
+                        <tr class="ud-row">
+                          <td class="ud-label">Car type</td>
+                          <td class="ud-value">Sedan</td>
+                        </tr>
+                        <tr class="ud-row">
+                          <td class="ud-label">Remarks</td>
+                          <td class="ud-value">XYZ</td>
+                        </tr>
+                        <tr class="ud-row ud-row-grey">
+                          <td class="ud-label">Vehicle Price</td>
+                          <td class="ud-value">$16,500.00</td>
+                        </tr>
+                        <tr class="ud-row ud-row-grey">
+                          <td class="ud-label">Freight</td>
+                          <td class="ud-value">$2,000.00</td>
+                        </tr>
+                        <tr class="ud-row ud-row-grey">
+                          <td class="ud-label">Others</td>
+                          <td class="ud-value">$500.00</td>
+                        </tr>
+                        <tr class="ud-row ud-row-grey">
+                          <td class="ud-label">Total Amount</td>
+                          <td class="ud-value">$19,000.00</td>
+                        </tr>
+                        <tr class="ud-row ud-row-grey">
+                          <td class="ud-label">Total Payable Amount</td>
+                          <td class="ud-value">$19,000.00</td>
+                        </tr>
+                        <tr class="ud-row ud-row-grey">
+                          <td class="ud-label">Advance Payable</td>
+                          <td class="ud-value">$9,750.00</td>
+                        </tr>
+                        <tr class="ud-row ud-row-grey">
+                          <td class="ud-label" style="border-bottom: none">
+                            Remaining Amount
+                          </td>
+                          <td class="ud-value" style="border-bottom: none">
+                            $19,000.00
                           </td>
                         </tr>
-                      </table>
-                    </td>
-
-                    <!-- GAP between card 2 and 3 -->
-                    <td width="2%">&nbsp;</td>
-
-                    <!-- Card 3: Need Help -->
-                    <td width="32%" valign="top">
-                      <table
-                        class="card-box"
-                        width="100%"
-                        cellpadding="0"
-                        cellspacing="0"
-                      >
-                        <tr>
-                          <td
-                            class="inner-card-content"
-                            height="115"
-                            valign="top"
-                          >
-                            <div class="card-icon">
-                              <img
-                                src="https://s3.ap-northeast-1.amazonaws.com/otoz.ai/icons/1772444819_486e9bfac3ee834d_email.png"
-                                alt="help"
-                                width="31"
-                                height="24"
-                              />
-                            </div>
-                            <p class="card-title">Need Help?</p>
-                            <p class="card-text">
-                              info@otoz.ai<br />+813-6435-2269
-                            </p>
+                        <tr class="ud-total-paid">
+                          <td class="ud-label">Total Paid</td>
+                          <td class="ud-value" style="text-align: right">
+                            $0.00
                           </td>
                         </tr>
                       </table>
@@ -698,21 +527,144 @@
               </td>
             </tr>
 
-            <!-- ========================== -->
-            <!-- BOTTOM BAR                 -->
-            <!-- ========================== -->
+            <!-- ============================= -->
+            <!-- PAYMENT DETAILS               -->
+            <!-- ============================= -->
             <tr>
-              <td class="bottom-bar">
-                <p class="bottom-bar-text">
-                  2026 <span>Otoz.Ai</span> All rights reserved
+              <td class="content-pad" style="padding-top: 8px">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="section-header-bar">Payment Details</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <!-- BANK DETAILS -->
+                    <td class="pd-col pd-col-left">
+                      <p class="pd-heading">Bank Details</p>
+                      <table class="pd-table" cellpadding="0" cellspacing="0">
+                        <tr class="pd-row">
+                          <td class="pd-label">Bank Name</td>
+                          <td class="pd-value">Choice Financial Group</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">Swift BIC</td>
+                          <td class="pd-value">202312480358</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">Branch Name</td>
+                          <td class="pd-value">(NA)</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">Bank Address</td>
+                          <td class="pd-value">(NA)</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">Account Type</td>
+                          <td class="pd-value">(NA)</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">Account NO</td>
+                          <td class="pd-value">202312480358</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">ABA Routing#</td>
+                          <td class="pd-value">091311229</td>
+                        </tr>
+                      </table>
+                    </td>
+
+                    <!-- BENEFICIARY DETAILS -->
+                    <td class="pd-col pd-col-right">
+                      <p class="pd-heading">Beneficiary Details</p>
+                      <table class="pd-table" cellpadding="0" cellspacing="0">
+                        <tr class="pd-row">
+                          <td class="pd-label">Beneficiary Name</td>
+                          <td class="pd-value">Otoz.ai Inc</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">ABA Routing#</td>
+                          <td class="pd-value">091311229</td>
+                        </tr>
+                        <tr class="pd-row">
+                          <td class="pd-label">Beneficiary Address</td>
+                          <td class="pd-value">
+                            1880, 366 Geary St, 15th Floor Suite #92, San
+                            Francisco, CA, San Francisco, US, 94108
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ============================= -->
+            <!-- TERMS AND CONDITIONS          -->
+            <!-- ============================= -->
+            <tr>
+              <td class="content-pad" style="padding-bottom: 20px">
+                <p class="terms-heading">Terms and Conditions</p>
+                <p class="terms-item">
+                  1- Deposit payment must be paid within 10 days. If not, the
+                  transaction will be suspended.
                 </p>
+                <p class="terms-item">
+                  2- All bank charges are to be paid by the customer.
+                </p>
+                <p class="terms-item">
+                  3- Otoz.Ai is authorized to stop customer's buying due to any
+                  delay in payments or insufficient shipment space conditions.
+                </p>
+                <p class="terms-item">
+                  4- In case of an import ban or any changes in import policy by
+                  the buyer's government or customs authority, Otoz.Ai reserves
+                  the right to ship, re-auction, or hold the vehicles in Japan,
+                  regardless of whether the balance has been paid or remains
+                  unpaid.
+                </p>
+                <p class="terms-item">
+                  5- In case of inspection, customer will cover the extra
+                  charges for repair, transport, freight or clearing due to oil,
+                  water leak, transmission, engine starting, flat tire etc.
+                </p>
+                <p class="terms-item">
+                  6- The balance amount must be received within 20 days from the
+                  departure date of the vessel.
+                </p>
+                <p class="terms-item">
+                  7- This invoice is valid for 10 days from the date of issue.
+                </p>
+              </td>
+            </tr>
+
+            <!-- ============================= -->
+            <!-- FOOTER BAR                    -->
+            <!-- ============================= -->
+            <tr>
+              <td class="footer-bar">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="footer-bar-text" width="75%" valign="middle">
+                      HQ: 28 Geary St STE 650 Suite 37, San Francisco,
+                      California 94108 - USA
+                    </td>
+                    <td class="footer-bar-link" width="25%" valign="middle">
+                      www.otoz.ai
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
-          <!-- end .email-container -->
         </td>
       </tr>
     </table>
-    <!-- end .email-wrapper -->
   </body>
 </html>
